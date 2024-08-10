@@ -1,0 +1,199 @@
+[gd_scene load_steps=10 format=3 uid="uid://ubws4w5yys2b"]
+
+[ext_resource type="PackedScene" uid="uid://bcqpd131hworn" path="res://world.tscn" id="1_ihgw6"]
+[ext_resource type="PackedScene" uid="uid://b345n710utyvp" path="res://spikes.tscn" id="2_ad1da"]
+[ext_resource type="PackedScene" uid="uid://w8irchwf3m6r" path="res://level_2.tscn" id="2_tilmj"]
+[ext_resource type="PackedScene" uid="uid://b4i6frrrqexoi" path="res://blackberry.tscn" id="3_3spih"]
+[ext_resource type="PackedScene" uid="uid://bc35aha5wqqps" path="res://level_tile_map.tscn" id="4_mq2nm"]
+[ext_resource type="Texture2D" uid="uid://da25cjvqtiy6c" path="res://hearts/hud_heartFull.png" id="6_cn7se"]
+[ext_resource type="Script" path="res://HUD.gd" id="6_nx8ov"]
+[ext_resource type="Texture2D" uid="uid://pyvap1hlhruy" path="res://hearts/hud_heartEmpty.png" id="7_4gt4i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_50hjs"]
+bg_color = Color(1, 1, 1, 0.270588)
+corner_radius_top_left = 11
+corner_radius_top_right = 11
+corner_radius_bottom_right = 11
+corner_radius_bottom_left = 11
+
+[node name="Level1" instance=ExtResource("1_ihgw6")]
+next_level = ExtResource("2_tilmj")
+
+[node name="Player" parent="." index="0"]
+position = Vector2(48, 96)
+
+[node name="Spikes" parent="." index="3" instance=ExtResource("2_ad1da")]
+position = Vector2(144, 160)
+
+[node name="Spikes2" parent="." index="4" instance=ExtResource("2_ad1da")]
+position = Vector2(224, 112)
+
+[node name="Spikes3" parent="." index="5" instance=ExtResource("2_ad1da")]
+position = Vector2(240, 112)
+
+[node name="Spikes4" parent="." index="6" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(-152, 224)
+
+[node name="Spikes5" parent="." index="7" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(-136, 224)
+
+[node name="Spikes6" parent="." index="8" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(-120, 224)
+
+[node name="Spikes7" parent="." index="9" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(-104, 224)
+
+[node name="Spikes8" parent="." index="10" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(-88, 224)
+
+[node name="Spikes9" parent="." index="11" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(-72, 224)
+
+[node name="Spikes10" parent="." index="12" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(-56, 224)
+
+[node name="Spikes11" parent="." index="13" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(-40, 224)
+
+[node name="Spikes12" parent="." index="14" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(-24, 224)
+
+[node name="Spikes13" parent="." index="15" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(-8, 224)
+
+[node name="Spikes14" parent="." index="16" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(8, 224)
+
+[node name="Spikes15" parent="." index="17" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(24, 224)
+
+[node name="Spikes16" parent="." index="18" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(320, 224)
+
+[node name="Spikes17" parent="." index="19" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(336, 224)
+
+[node name="Spikes18" parent="." index="20" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(352, 224)
+
+[node name="Spikes19" parent="." index="21" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(368, 224)
+
+[node name="Spikes20" parent="." index="22" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(384, 224)
+
+[node name="Spikes21" parent="." index="23" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(400, 224)
+
+[node name="Spikes22" parent="." index="24" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(416, 224)
+
+[node name="Spikes23" parent="." index="25" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(432, 224)
+
+[node name="Spikes24" parent="." index="26" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(448, 224)
+
+[node name="Spikes25" parent="." index="27" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(464, 224)
+
+[node name="Spikes26" parent="." index="28" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(480, 224)
+
+[node name="Spikes27" parent="." index="29" instance=ExtResource("2_ad1da")]
+visible = false
+position = Vector2(496, 224)
+
+[node name="Blackberry" parent="." index="30" instance=ExtResource("3_3spih")]
+position = Vector2(120, 40)
+
+[node name="Blackberry6" parent="." index="31" instance=ExtResource("3_3spih")]
+position = Vector2(-16, 192)
+
+[node name="Blackberry5" parent="." index="32" instance=ExtResource("3_3spih")]
+position = Vector2(-16, -88)
+
+[node name="Blackberry2" parent="." index="33" instance=ExtResource("3_3spih")]
+position = Vector2(120, -88)
+
+[node name="Blackberry3" parent="." index="34" instance=ExtResource("3_3spih")]
+position = Vector2(272, 48)
+
+[node name="Blackberry4" parent="." index="35" instance=ExtResource("3_3spih")]
+position = Vector2(304, -64)
+
+[node name="LevelTileMap2" parent="." index="36" instance=ExtResource("4_mq2nm")]
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 65536, 0, 1, 65537, 131072, 1, 1, 131072, 0, 131073, 131072, 1, 196609, 131072, 1, 262145, 131072, 1, 327681, 131072, 1, 393217, 327680, 2, 458753, 327680, 1, 524289, 327680, 1, 589825, 327680, 1, 131072, 0, 1, 196608, 0, 1, 262144, 0, 1, 327680, 0, 1, 393216, 0, 1, 458752, 0, 1, 524288, 0, 1, 589824, 0, 1, 655360, 0, 1, 720896, 0, 2, 720897, 65536, 2, 720898, 65536, 2, 720899, 65536, 2, 720900, 65536, 2, 720901, 65536, 2, 720902, 65536, 2, 720903, 65536, 2, 720904, 65536, 2, 720905, 65536, 2, 720906, 65536, 2, 720907, 327680, 3, 720908, 524288, 3, 720909, 393216, 3, 720910, 393216, 3, 720911, 393216, 3, 720912, 393216, 3, 720913, 393216, 3, 720914, 65536, 2, 720915, 131072, 2, 655379, 131072, 1, 655378, 393216, 2, 655377, 393216, 1, 655367, 327680, 1, 655366, 327680, 1, 655365, 327680, 1, 655364, 327680, 1, 655363, 327680, 1, 655362, 327680, 1, 655361, 327680, 1, 458754, 327680, 1, 393218, 65536, 0, 393219, 131072, 0, 458755, 458752, 1, 524290, 327680, 1, 589826, 327680, 1, 524291, 131072, 1, 589827, 327680, 2, 589828, 65536, 0, 589829, 65536, 0, 589830, 393216, 2, 589831, 327680, 1, 393224, 131072, 0, 393223, 65536, 0, 393222, 0, 0, 458758, 0, 1, 524294, 0, 1, 524295, 327680, 1, 458759, 327680, 1, 458760, 458752, 1, 524296, 458752, 1, 589832, 131072, 1, 655368, 327680, 2, 655369, 65536, 0, 655370, 393216, 2, 589834, 0, 1, 524298, 0, 1, 458762, 0, 1, 393226, 0, 0, 393227, 393216, 2, 327691, 0, 0, 327692, 524288, 2, 327693, 131072, 0, 393228, 327680, 1, 458764, 589824, 0, 524300, 327680, 1, 589836, 393216, 1, 524301, 327680, 1, 458765, 327680, 2, 393229, 131072, 1, 458763, 327680, 1, 524299, 327680, 1, 589835, 327680, 1, 655371, 327680, 1, 589837, 327680, 1, 589838, 327680, 1, 524302, 327680, 1, 458766, 65536, 0, 458767, 65536, 0, 458768, 589824, 1, 458769, 393216, 1, 458770, 327680, 1, 458771, 458752, 1, 393235, 458752, 1, 327699, 131072, 1, 262163, 131072, 1, 196627, 131072, 1, 131091, 131072, 1, 65555, 131072, 1, 19, 131072, 0, 18, 0, 0, 65554, 0, 1, 131090, 0, 1, 196626, 0, 1, 262162, 0, 1, 327698, 393216, 2, 393234, 327680, 1, 524306, 393216, 1, 327697, 65536, 0, 393233, 327680, 1, 524305, 327680, 1, 327696, 0, 0, 393232, 0, 1, 524304, 393216, 1, 524307, 458752, 1, 589843, 131072, 1, 589842, 393216, 1, 589841, 589824, 0, 589840, 393216, 1, 589839, 393216, 1, 524303, 327680, 1, 655376, 393216, 1, 655375, 393216, 1, 655374, 393216, 1, 655373, 393216, 1, 655372, 393216, 1, 65533, 196608, 0, 131069, 196608, 1, 196605, 196608, 1, 262141, 196608, 1, 327677, 196608, 1, 393213, 196608, 1, 458749, 196608, 1, 655357, 196608, 1, 589821, 196608, 1, 524285, 196608, 1, 720893, 196608, 1, 786429, 196608, 2, 7, 196608, 0, 65543, 196608, 2, 262156, 196608, 0)
+layer_1/tile_data = PackedInt32Array(327690, 1, 0, 262155, 1, 0, 262160, 196609, 0, 262161, 262145, 0, 262157, 393218, 0, 327691, 65537, 0, 393226, 0, 1, 327693, 131072, 1, 262156, 65536, 0, 327696, 0, 1, 327697, 65536, 1, 327698, 65536, 1, 262162, 524288, 2)
+
+[node name="Label" type="Label" parent="." index="37"]
+offset_left = -88.0
+offset_top = -72.0
+offset_right = 59.0
+offset_bottom = 21.0
+theme_override_colors/font_color = Color(0.631373, 0.32549, 0.137255, 1)
+theme_override_font_sizes/font_size = 9
+text = "Finish 
+
+down 
+
+here 
+
+||				
+\\/
+
+"
+horizontal_alignment = 1
+
+[node name="HUD" type="CanvasLayer" parent="." index="39"]
+script = ExtResource("6_nx8ov")
+
+[node name="PanelContainer" type="PanelContainer" parent="HUD" index="0"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 56.0
+offset_bottom = 24.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_50hjs")
+
+[node name="HeartsFull" type="TextureRect" parent="HUD" index="1"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 283.0
+offset_bottom = 60.0
+scale = Vector2(0.15, 0.18)
+texture = ExtResource("6_cn7se")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="HeartsEmpty" type="TextureRect" parent="HUD" index="2"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 283.0
+offset_bottom = 60.0
+scale = Vector2(0.15, 0.18)
+texture = ExtResource("7_4gt4i")
+expand_mode = 1
+stretch_mode = 1

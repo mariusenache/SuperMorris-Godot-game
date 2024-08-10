@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://3aew0q4cl7na"]
+
+[ext_resource type="Script" path="res://start_menu.gd" id="1_mrwtg"]
+
+[node name="StartMenu" type="CenterContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mrwtg")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="StarGameButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Begin Foraging"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Exit
+"
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(0, 122)
+layout_mode = 2
+text = "GAME OVER"
+
+[connection signal="pressed" from="VBoxContainer/StarGameButton" to="." method="_on_star_game_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
