@@ -1,5 +1,5 @@
 # SuperMorris: A 2D Platformer Game 
-A 2D platformer game made with the Godot engine. 
+A 2D platformer game made with the Godot engine. [(playthrough video)](https://www.youtube.com/watch?v=rw2IV8Qgg_4)
 
 **Overview**: SuperMorris is a 2D platformer prototype built with Godot Engine. Play as Morris, a bear collecting berries before hibernation. Navigate through the map, avoid spikes and falling off cliffs across two challenging levels in a classic platformer gameplay.
 
@@ -20,4 +20,5 @@ A 2D platformer game made with the Godot engine.
 
 **How to Play:** 
 In the "executable" folder, you'll find the executable file to start playing.
+
 
